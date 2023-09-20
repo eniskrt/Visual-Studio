@@ -1,0 +1,57 @@
+/* Custom CSS*/
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #4d2d06;
+    font-family: Georgia, Times, serif;
+    color: #fff;
+    text-align: center;
+    font-size: 50px;
+}
+#monkey{
+    background: #fff;
+    color: #4d2d06;
+    font-family: Verdana, Arial, sans-serif;
+}
+#donkey{
+    background: green;
+    font-family: Monaco, monospace;
+}
+.primary-box{
+    background: #222;
+    color: #eee;
+}
+.secondary-box{
+    background: #eee;
+    color: #222;
+}
+.inside-box{
+    margin: 20px 0;
+    padding: 10px;
+    background: #94efff;
+    color: #555;
+}
+/*Descendant Selectors*/
+.primary-box h2 {
+    font-family: Helvetica, Arial, sans-serif;
+}
+.primary-box p em {
+    color: #32b0ff;
+}
+.secondary-box p {
+    font-family: Helvetica, Arial, sans-serif;
+}
+.secondary-box em {
+    color: #fc3fff;
+}
+/*Groupin Selectors*/
+.primary-box, .secondary-box{
+    font-size: 24px;
+    margin: 0 0 10px;
+    padding: 10px;
+}
+.inside-box h3, .inside-box p {
+    font-size: 20px;
+}

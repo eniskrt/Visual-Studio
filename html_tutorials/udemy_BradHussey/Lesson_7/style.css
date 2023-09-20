@@ -1,0 +1,217 @@
+/* Simple CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    font-size: 16px;
+}
+body {
+    padding: 40px;
+    font-family: Georgia, Times, serif;
+    color: #353535;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 10px 0;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+}
+h1 {
+    font-size: 3em;  /*3x the base font size(which is 16px in our case)*/
+}
+h2 {
+    font-size: 2em;
+}
+h3 {
+    font-size: 1.5em;
+    letter-spacing: -1px;
+    word-spacing: 10px;
+    text-align: center;
+}
+blockquote {
+    margin:0 0 0 30px ;
+    font-style: italic; /* Can be normal or italic */
+    text-indent: 80px;
+    line-height: 1.3;
+}
+span {
+    text-decoration:line-through ;
+}
+em {
+    text-transform: capitalize;
+}
+strong {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+a{
+    color: #3ca;
+    text-decoration: none;
+}
+code {
+    display: block;
+    color: #e96c28;
+    background-color: white;
+    padding:5px;
+}
+/*      A Note on Font Weight
+        =====================
+        The other values you can use are::
+        -bolder
+        -lighter
+
+        The following are equivalent to "normal"
+        -100
+        -200
+        -300
+        -400
+
+        The following are equivalent to "bold"
+        -500
+        -600
+        -700
+
+        for heavier weights (not supported in all fonts)
+        -800
+        -900
+
+
+        A Note on Line Height
+        =====================
+        Line height is how tall the lines of text are within an element
+
+        You can use a simple numeric value, like "3"
+        which will make the line height 3x the height of the font size
+
+        You can also use a lenghth, like "px" or "em"
+
+        Percentages are also accepted
+
+
+        A Note on Text Decoration
+        =========================
+        You can use following values :
+        - underline
+        - overline
+        - line-through
+        - none
+
+        Underline are usally best left for links only
+
+
+        A Note on Text Transform
+        ========================
+        You may use the following values:
+        - uppercase
+        - lowercase
+        - capitalize
+        - none
+
+
+*/
+.border-box {
+    background: #eee;
+    margin: 0 0 20px;
+    padding: 20px;
+    width: 300px;
+}
+#box-1 {
+    border: solid 1px black;
+}
+#box-2{
+    border: dashed 1px black;
+}
+#box-3{
+    border: dotted 1px black;
+}
+#box-4{
+    border: double 3px black;
+}
+#box-5{
+    border: solid 4px black;
+}
+#box-6{
+    border: dashed 4px black;
+}
+#box-7{
+    border: dotted 4px black;
+}
+#box-8{
+    border: double 6px black;
+}
+
+/* Bacground Images */
+.background-example {
+    height: 200px;
+    width: 200px;
+    border: solid 1px black;
+}
+#background-1{
+    /*By default, background images repeat X & Y, and are positioned top left */
+    background-image: url('images/blue_background.jpg');
+}
+#background-2 {
+    background-color: #a3d;
+}
+#background-3 {
+    background: url('images/steak_background.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+#background-4{
+    background: url('images/skull_background.jpg') bottom left repeat-x;
+}
+/* Forms */
+#container {
+    width: 500px;
+    margin: 0 auto;
+}
+form{
+    background-image: url(images/red_background.jpg);
+    padding: 20px;
+    font-family:Helvetica, Arial, sans-serif ;
+}
+form fieldset {
+    background-image: url(images/blue_background.jpg);
+    padding: 40px;
+    border:solid 1px white ;
+}
+form legend {
+    border: solid 1px #333;
+    background-image: url(images/blue_background.jpg);
+    padding: 5px;
+    font-size: 30px;
+    font-weight: bold;
+}
+form input, form textarea {
+    display: block;
+    margin-bottom: 20px;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+form label {
+    font-size: 11px;
+    text-transform: uppercase;
+}
+form input[type="text"], form input[type="email"], form textarea {
+    padding: 10px;
+    font-size: 20px;
+    font-family: Helvetica, Arial, sans-serif;
+    color: white;
+    border: solid 1px #b90707;
+    background-image: url(images/red_background.jpg);
+}
+form textarea {
+    width: 300px;
+    height: 100px;
+}
+form input[type="submit"] {
+    border: none;
+    background: url(images/Button+Background.jpg) top left repeat-x;
+    height: 40px;
+    padding:0 20px ;
+    border: solid 1px #d4730c;
+    color: white;
+    font-weight: bold;
+    font-family: Helvetica, Arial, sans-serif;
+    cursor: pointer;
+}
