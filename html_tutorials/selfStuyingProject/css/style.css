@@ -1,4 +1,61 @@
-img {
-    width: 974px;
-    height: 471px;
+body{
+    background: #f2f3ee url(/selfStuyingProject/image/Balıklıarkaplankesme.png) top left repeat;
+    color: #00385F;
+    font-size: 16px;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing:antialiased;
+   text-rendering: optimizeLegibility ;
+}
+.container{
+    width: 924px;
+    margin: 0 auto;
+    padding: 30px 24px;
+}
+/* Header */
+header nav {
+    text-align: center;
+}
+header nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: block;
+    line-height: 9em;
+}
+header nav ul li {
+    padding: 20px;
+    display: inline-block;
+}
+header nav ul li a:link {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    color: #00385F;
+}
+header nav ul li a:visited {
+    color: #00385F;
+}
+header nav ul li a:hover {
+    color: #d5133a;
+    padding-top: 35px;
+    background: url(/selfStuyingProject/image/balıktitle.png) top center no-repeat;
+}
+header nav ul li#logo a{
+    display: block;
+    width: 300px;
+    height: 200px;
+    background: url(/selfStuyingProject/image/kucukbalık.png) top center no-repeat;
+    text-indent: -9999px;
+}
+header nav ul li#logo a:hover{
+    background: url(/selfStuyingProject/image/buyukbalık.png) top center no-repeat;
+    padding-top: 40px;
+    padding: 0;
+    color: #d5133a;
+    z-index: 1;
+}
+
+/* Hero */
+#hero {
+    background: #00385F;
 }
